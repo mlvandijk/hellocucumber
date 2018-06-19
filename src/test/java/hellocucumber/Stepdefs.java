@@ -11,9 +11,9 @@ public class Stepdefs {
     private String today;
     private String actualAnswer;
 
-    @Given("^today is Sunday$")
-    public void today_is_Sunday() {
-        this.today = "Sunday";
+    @Given("today is {string}")
+    public void today_is(String day) {
+        this.today = day;
     }
 
     @When("^I ask whether is's Friday yet$")
